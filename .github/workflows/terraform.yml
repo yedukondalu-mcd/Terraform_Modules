@@ -42,7 +42,7 @@ jobs:
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: terraform apply -auto-approve
       
-    - name: Terraform destroy
+    - name: Terraform destroys
       if: github.ref == 'refs/heads/main' && github.event_name == 'push'
       run: |
            sleep 5m
